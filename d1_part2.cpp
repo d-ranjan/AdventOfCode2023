@@ -104,7 +104,8 @@ int main()
                   "start & end same word digit");
 
     const auto start {std::chrono::steady_clock::now()};
-    const auto result = get_sum_of_calibration_values("/root/Desktop/AVC/d1_input.txt");
+    const auto result
+        = get_sum_of_calibration_values("/root/Desktop/AdventOfCode2023/d1_input.txt");
     const auto end {std::chrono::steady_clock::now()};
     const auto elapsed_time = std::chrono::duration_cast<std::chrono::microseconds>(end - start);
 

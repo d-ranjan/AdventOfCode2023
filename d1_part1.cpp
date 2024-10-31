@@ -20,9 +20,9 @@
 
 [[nodiscard]] int get_sum_of_calibration_values(const std::string& file_path)
 {
-    std::fstream file;
+    std::ifstream file;
 
-    file.open(file_path, std::ios::in);
+    file.open(file_path);
 
     if (!file.is_open()) {
         std::println("unable to open file.");
@@ -40,6 +40,7 @@
 int main()
 {
     static_assert(get_calibration_value("ghdh4hssj7nn") == 47);
-    const auto result = get_sum_of_calibration_values("/root/Desktop/AVC/d1_input.txt");
+    const auto result
+        = get_sum_of_calibration_values("/root/Desktop/AdventOfCode2023/d1_input.txt");
     std::println("{}", result);
 }
