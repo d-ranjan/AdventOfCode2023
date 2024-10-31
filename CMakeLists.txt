@@ -6,7 +6,8 @@ set(CMAKE_CXX_STANDARD 23)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 add_executable(advent_of_code
-    d1_part1.cpp
+    # d1_part1.cpp
+    d1_part2.cpp
 )
 
 include(GNUInstallDirs)
